@@ -9,30 +9,20 @@ This project is one way to show what I’ve been up to and for testing different
 Table of Contents
 
 Demo
-
 Features
-
 Usage
-
 Contact
 
 
 Demo
-
 ADD LINK HERE
 
 Features
-
 Key features:
-
 Responsive design
-
 Projects showcase
-
 Skills part is for my professional skills.
-
 Hobbies to show some of my interests.
-
 Contact information.
 
 
