@@ -4,9 +4,12 @@ Personal portfolio
 Description
 
 This is my personal sandbox for playing around and testing different things. For this reason, some things may be broken or otherwise in testing and may not work as intended. So, apologies about that in front :D
+
 This project is one way to show what I’ve been up to and for testing different things. For that reason, the content will change time to time and probably will be under construction eternally. The main focus is to get the Skills part finished first. 
 
+
 Table of Contents
+
 
 Demo
 Features
@@ -15,6 +18,7 @@ Contact
 
 
 Demo
+
 ADD LINK HERE
 
 Features
