@@ -1,0 +1,471 @@
+body {
+    padding: 5px;
+    background-color: rgb(54, 36, 70);
+    color: rgb(218, 218, 218);
+    font-family: verdana;
+  }
+  
+  .dark-mode {
+    background-color: rgb(97, 81, 112);
+    color: rgb(218, 218, 218);
+  }
+  
+  h1 {
+    
+    text-align: center;
+  }
+
+  h2 {
+    
+    text-align: left;
+  }
+
+  h3 {
+    
+    text-align: center;
+  }
+  
+  p {
+    
+    
+    font-size: 20px;
+  }
+
+  img {
+    border-radius: 20px;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+
+.fade-img {
+  position: relative;
+   
+}
+
+.fade-img:after {
+  content:""; 
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(54, 36, 70,0) 0%,rgba(54, 36, 70,1) 100%);
+  height: 100%;  
+}
+
+.menu {
+  float: center;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+.menu a {
+  background-color: rgb(54, 36, 70);
+  padding: 10px;
+  margin-top: 7px;
+  color: rgb(218, 218, 218);
+  transition: opacity 0.4s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  text-decoration: none;
+  color: rgb(218, 218, 218); 
+  
+}
+
+.menu a:hover,
+.menu a:focus {
+  opacity: 1; 
+}
+
+.menu a:hover ~ .menu a:not(:hover),
+.menu a:focus ~ .menu a:not(:focus) {
+  opacity: 0.4; /* not working for some reason */
+}
+
+.menu a:before,
+.menu a:after {
+  content: "";
+  transition: 0.4s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  color: rgb(218, 218, 218);
+}
+
+.menu a:before {
+  top: -0.25em;
+}
+.menu a:after {
+  bottom: -0.25em;
+}
+.menu a:before,
+.menu a:after {
+  height: 2px;
+  width: 0;
+  background: rgb(218, 218, 218);
+}
+
+.menu a:before {
+  left: 0;
+}
+.menu a:after {
+  right: 0;
+}
+.menu a:hover:before,
+.menu a:hover:after {
+  width: 100%;
+}
+
+
+.main a {
+    
+  position: relative;
+  text-decoration: none;
+  color: rgb(15, 15, 190);
+}
+
+.main a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #c82dce;
+  bottom: 0;
+  right: 0;
+  
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.main a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.main a:visited {
+  color: #c82dce;
+}
+
+.main {
+  float: left;
+  margin-left: 5%;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #711979;
+  float: right;
+  width: 25%;
+  padding: 15px;
+  margin-top: 80px;
+  margin-right: 5%;
+  text-align: center;
+  border-radius: 15px;
+  }
+
+.left {
+    
+  float: left;
+  width: 25%;
+  padding: 5px;
+  margin-top: 60px;
+    
+    
+  }
+
+  .sidebar {
+    position: fixed;
+    width: 24%;
+    height: 40vh;
+    float: left;
+    font-size: 0.85em;
+  }
+      
+  .nav {
+    position: relative;
+    margin: 0 8%;
+    text-align: right;
+    top: 80px;
+    transform: translateY(-50%);
+    font-weight: bold;
+  }
+      
+  .nav ul {
+    list-style: none;
+  }
+      
+  .nav ul li {
+    position: relative;
+    margin: 1em 0;
+  }
+      
+  .nav ul li a {
+    line-height: 3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    color: rgba(255, 255, 255, 0.35);
+    display: block;
+    transition: all ease-out 300ms;
+  }
+      
+  .nav ul li.active a {
+    color: white;
+  }
+      
+  .nav ul li:not(.active)::after {
+    opacity: 0.2;
+  }
+      
+  .nav ul li:not(.active):hover a {
+    color: rgba(255, 255, 255, 0.75);
+  }
+      
+  .nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background: black;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #5e42a6, #b74e91);
+  }
+  
+  
+.footer {
+  background-color:#711979;
+  float: bottom;
+  max-width: 100%;
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+/* Contact form */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+header {
+  position: relative;
+  margin: 20px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 550px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 500px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 500px;
+  max-width: 500px;
+  min-width: 500px;
+  height: 110px;
+  max-height: 300px;
+  min-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 502px;
+  
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+/* social media */
+
+#social-test {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 40px;
+  .social {
+    padding-left: 0px;
+  }
+  li {
+    display: inline-block;
+  }
+  li a {
+    color: rgba(256, 256, 256, 0.6);
+    border-radius: 8px;
+    list-style-type: none;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    padding: 1%;
+    border: 1px solid rgba(256, 256, 256, 0.6);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s;
+    &:hover {
+      color: rgba(256, 256, 256, 1);
+      border: 1px solid rgba(256, 256, 256, 1);
+    }
+  }
+}
+
+.social:hover > li {
+  opacity: 0.5;
+}
+
+.social:hover > li:hover {
+  opacity: 1;
+}
