@@ -22,20 +22,28 @@ Demo
 ADD LINK HERE
 
 Features
+
 Key features:
+
 Responsive design
+
 Projects showcase
+
 Skills part is for my professional skills.
+
 Hobbies to show some of my interests.
+
 Contact information.
 
 
 Usage
+
 Feel free to explore. The skills section is for my professional showcase and expresses some of my work skills in different areas. 
 Hobbies introduces some of my personal interests like photography, downhill biking, and computers. 
 
 
 Contact
+
 On the pages you can find links to my different social media accounts, and you can also send me a message if you have something in mind. I’m happy to answer any questions you might have regarding professional or hobbies.
 https://www.linkedin.com/in/risto-ennevaara-32a93165/ 
 
