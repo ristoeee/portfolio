@@ -2,8 +2,9 @@
 
 body {
     padding: 5px;
-    background-color: rgb(35, 17, 51);
-    color: rgb(240, 240, 240);
+    background-color: rgb(35, 17, 51); 
+   
+    color: rgb(219, 219, 219);
     font-family: Lato;
   }
   
@@ -39,6 +40,10 @@ body {
     font-size: 20px;
   }
 
+  .quote {
+    font-style: italic;
+  }
+
   img {
     border-radius: 20px;
   }
@@ -60,12 +65,14 @@ body {
   left: 0;
   right: 0;
   background: linear-gradient(to bottom, rgba(35, 17, 51,0) 0%,rgba(35, 17, 51,1) 100%);
+  
   height: 100%;  
 }
 
 .menu {
   float: center;
   text-align: center;
+  letter-spacing: 3px;
   position: relative;
   text-decoration: none;
   max-width: 100%;
@@ -170,7 +177,7 @@ body {
 }
 
 .right {
-  background-color: #711979;
+  background-image: linear-gradient(to left, #438ff3ab, #a620ffb7);
   float: right;
   width: 25%;
   padding: 15px;
@@ -246,12 +253,13 @@ body {
     background: black;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to right, #5e42a6, #b74e91);
+    background-image: linear-gradient(to right, #4c8aff67, #9b22ebda);
   }
   
   
 .footer {
-  background-color:#711979;
+  /*background-color:#711979; */
+  background-image: linear-gradient(to right, #438ff3ab, #a620ffb7);
   float: bottom;
   max-width: 100%;
   text-align:center;
