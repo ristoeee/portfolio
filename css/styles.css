@@ -189,7 +189,7 @@ body {
 .right {
   background-image: linear-gradient(to left, #438ff3ab, #a620ffb7);
   float: right;
-  width: 25%;
+  width: 22%;
   padding: 15px;
   margin-top: 40px;
   margin-right: 3%;
@@ -202,9 +202,7 @@ body {
   float: left;
   width: 25%;
   padding: 5px;
-  margin-top: 60px;
-    
-    
+  margin-top: 60px; 
   }
 
   .sidebar {
@@ -280,7 +278,7 @@ body {
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  .menu, .main, .right .left .sidebar {
     width: 100%;
   }
 }
