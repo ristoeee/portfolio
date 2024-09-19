@@ -189,10 +189,10 @@ body {
 .right {
   background-image: linear-gradient(to left, #438ff3ab, #a620ffb7);
   float: right;
-  width: 22%;
-  padding: 15px;
-  margin-top: 40px;
-  margin-right: 3%;
+  width: 23%;
+  padding: 2%;
+  margin-top: 20px;
+  margin-right: 5%;
   text-align: center;
   border-radius: 15px;
   }
@@ -202,7 +202,7 @@ body {
   float: left;
   width: 25%;
   padding: 5px;
-  margin-top: 60px; 
+  margin-top: 50px; 
   }
 
   .sidebar {
@@ -278,9 +278,19 @@ body {
 
 @media only screen and (max-width: 800px) {
   /* For mobile phones: */
-  .menu, .main, .right .left .sidebar .nav {
-    width: 100%;
+  .left, .sidebar, .nav {
+    width: 60%;
+    
+    margin-top: 30px;
   }
+  .main {
+    margin-top: 250px;
+  }
+  .main, .right {
+    width: 80%;
+    align-content: center;
+  }
+
 }
 
 /* Contact form */
