@@ -280,7 +280,6 @@ body {
   /* For mobile phones: */
   .left, .sidebar, .nav {
     width: 60%;
-    
     margin-top: 30px;
   }
   .main {
