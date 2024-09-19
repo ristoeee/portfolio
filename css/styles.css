@@ -149,7 +149,6 @@ body {
 
 
 .main a {
-    
   position: relative;
   text-decoration: none;
   color: rgb(15, 15, 190);
@@ -263,8 +262,7 @@ body {
     bottom: 0;
     background-image: linear-gradient(to right, #4c8aff67, #9b22ebda);
   }
-  
-  
+    
 .footer {
   /*background-color:#711979; */
   background-image: linear-gradient(to right, #438ff3ab, #a620ffb7);
