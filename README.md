@@ -3,9 +3,13 @@
 
 ### Description
 
+http://ennevaara.com/
+
 This is my personal sandbox for playing around and testing different things. For this reason, some things may be broken or otherwise in testing and may not work as intended. So, apologies about that in front :D
 
 This project is one way to show what I’ve been up to and for testing different things. For that reason, the content will change time to time and probably will be under construction eternally. The main focus is to get the Skills part finished first. 
+
+The site is running on my VM server with Apache2 web server insteed of ready to use service. Reason for this is to gain knowledge how these things actually work.
 
 
 ### Table of Contents
@@ -25,7 +29,7 @@ Contact
 
 Key features:
 
-Responsive design
+Responsive design 
 
 Projects showcase
 
